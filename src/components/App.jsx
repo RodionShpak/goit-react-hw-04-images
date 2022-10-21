@@ -1,16 +1,21 @@
-export const App = () => {
+import React, { useState } from 'react';
+import { AppStyled } from './App.styled';
+import Searchbar from './Searchbar/Searchbar';
+import ImageGallery from './ImageGallary/ImageGallery';
+
+const App = () => {
+  const [inputFilter, setInputFilter] = useState('');
+
+  const handleOnSubmit = inputFilter => {
+    setInputFilter(inputFilter);
+  };
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <AppStyled>
+      < >
+        <Searchbar onSubmit={handleOnSubmit} />
+        <ImageGallery inputFilter={inputFilter} />
+      </ >
+    </AppStyled>
   );
 };
+export default App;
