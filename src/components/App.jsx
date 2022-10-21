@@ -11,10 +11,10 @@ const App = () => {
   };
   return (
     <AppStyled>
-      < >
+      <>
         <Searchbar onSubmit={handleOnSubmit} />
         <ImageGallery inputFilter={inputFilter} />
-      </ >
+      </>
     </AppStyled>
   );
 };
