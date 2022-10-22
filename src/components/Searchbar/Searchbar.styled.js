@@ -31,7 +31,7 @@ overflow: hidden;
 export const Button = styled.button`
 display: inline-block;
   width: 70px;
-  height: 70px;
+  height: 50px;
   border: 0;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
