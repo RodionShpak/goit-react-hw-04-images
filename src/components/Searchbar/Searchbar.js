@@ -26,7 +26,7 @@ export const Searchbar = (props) => {
           value={query}
           onChange={handleChange}
         />
-        <Button type="submit">Шукати</Button>
+        <Button type="submit">Искать</Button>
       </SearchForm>
     </Bar>
   );
