@@ -30,8 +30,8 @@ overflow: hidden;
 `;
 export const Button = styled.button`
 display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   border: 0;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
