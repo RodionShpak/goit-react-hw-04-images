@@ -44,11 +44,11 @@ useEffect(() => {
   }
 }, [fetchImg, query]);
 
-useEffect(() => {
-  if (error !== null) {
-    toast.error(error);
-  }
-}, [error]);
+// useEffect(() => {
+//   if (error !== null) {
+//     toast.error(error);
+//   }
+// }, [error]);
 
  return (
     <div>
