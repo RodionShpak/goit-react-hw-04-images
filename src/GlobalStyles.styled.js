@@ -1,6 +1,8 @@
-@import-normalize;
-/* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
+const GlobalStyle = createGlobalStyle`
+ ${normalize}
 html {
   box-sizing: border-box;
   width: 100vw;
@@ -23,7 +25,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+ `;
+
+export default GlobalStyle;
